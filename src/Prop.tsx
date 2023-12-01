@@ -2,7 +2,7 @@ import { Row, Col, Spinner, Button } from "react-bootstrap";
 import { useUser } from "./Contexts/UserContext";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { Coin, ProposalType } from "secretjs";
+import { ProposalType } from "secretjs";
 import { CommunityPoolSpendProposal } from "secretjs/dist/protobuf/cosmos/distribution/v1beta1/distribution";
 import { humanToDenom } from "./Utils/denoms";
 
