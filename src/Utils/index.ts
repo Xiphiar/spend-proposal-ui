@@ -11,7 +11,7 @@ export const truncate = (string: string, maxLength = 12) => {
 }
 
 export const stringToCoin = (coinAsString: string): Coin => {
-  const regexMatch = coinAsString.match(/^(\d+)([a-zA-F0-9\/]+)$/);
+  const regexMatch = coinAsString.match(/^(\d+)([a-zA-F0-9/]+)$/);
 
   if (regexMatch === null) {
     throw new Error(`cannot extract denom & amount from '${coinAsString}'`);
